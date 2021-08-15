@@ -34,6 +34,6 @@ int main()
     printf("Song 2 length: %d seconds\n", song2.length_in_seconds);
     printf("Song 2 year recorded: %d\n", song2.year_recorded);
     printf("Song 2 intial: %c\n", song2.initial);
-    printf("sizeof (song1): %d bytes\n", sizeof(song1));
+    printf("sizeof (song2): %d bytes\n", sizeof(song2));
 
 }
