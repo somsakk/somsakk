@@ -40,7 +40,7 @@ int main(void)
     // int16_t N = 1;
     // uint16_t N = 1;
     // int8_t N = 127;  // no overflow
-    // int8_t N = 255;  // overflow occurs
+    // int8_t N = 128;  // overflow occurs
     // int8_t N = 256; 
     // int8_t N = (int8_t) 255; 
     // int8_t N = 0xff02;
