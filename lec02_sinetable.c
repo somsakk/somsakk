@@ -11,23 +11,23 @@ int main(void)
     printf("Value of PI = %f \n\n", pi);
     printf("Angle\tSine\n");
     
-    // angle_degree = 0;/* initial angle value */
-    // while (angle_degree <= 360) { /* loop til angle_degree > 360 */
-    //     angle_radian = pi * angle_degree / 180.0;
-    //     value = sin(angle_radian);
-    //     printf ("%3d\t%f\n ", angle_degree, value);
-    //     angle_degree += 10; /* increment the loop index */
-    // }
-
     angle_degree = 0;/* initial angle value */
-    do {
+    while (angle_degree <= 360) { /* loop til angle_degree > 360 */
         angle_radian = pi * angle_degree / 180.0;
         value = sin(angle_radian);
         printf ("%3d\t%f\n ", angle_degree, value);
         angle_degree += 10; /* increment the loop index */
-    } while (angle_degree <= 360);
+    }
 
-    // for (int angle_degree = 0; angle_degree <= 360; angle_degree += 10) {
+    // angle_degree = 0;/* initial angle value */
+    // do {
+    //     angle_radian = pi * angle_degree / 180.0;
+    //     value = sin(angle_radian);
+    //     printf ("%3d\t%f\n ", angle_degree, value);
+    //     angle_degree += 10; /* increment the loop index */
+    // } while (angle_degree <= 360);
+
+    // for (angle_degree = 0; angle_degree <= 360; angle_degree += 10) {
     //     angle_radian = pi * angle_degree / 180.0;
     //     value = sin(angle_radian);
     //     printf ("%3d\t%f\n ", angle_degree, value);

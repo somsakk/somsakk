@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include <stdint.h>
 
-/* The "%d" format is for (signed) int values. If you use it with
+/*  The "%d" format is for (signed) int values. If you use it with
  an unsigned value, it could print something other than the 
  actual value.
 
@@ -12,8 +12,8 @@
  http://www.cplusplus.com/reference/cstdio/printf/
 
 The intN_t and uintN_t types are defined in stdin.h. 
-That's why we need #include<stdint.h> in the header.
-*/
+That's why we need #include<stdint.h> in the header. */
+
 
 int main(void)
 {
@@ -34,18 +34,20 @@ int main(void)
 
     // Here N++ would give an overflow number. N will be zero.
     // Note that there is no overflow warning during compilation.
-    // char N = 255; N++;  // Alternatively, N = N+1;
+    // unsigned char N = 256; 
+    // N++ ;  // Alternatively, N = N+1;
 
     // int16_t N = 1;
     // uint16_t N = 1;
     // int8_t N = 127;  // no overflow
     // int8_t N = 255;  // overflow occurs
     // int8_t N = 256; 
-    // int8_t N = (int8_t) 256; 
+    // int8_t N = (int8_t) 255; 
     // int8_t N = 0xff02;
     // int8_t N = (uint8_t) 0xff02;
 
-    printf("Decimal: %d, sizeof N = %d bytes\n", N, (int)sizeof(N));
+    printf("sizeof N = %d bytes\n", (int)sizeof(N));
+    printf("Decimal: %d\n", N);
     printf("Hex: %x\n", N);
     printf("Octal: %o\n", N);  // cannot print binary
     printf("Unsigned decimal: %u\n", N);
