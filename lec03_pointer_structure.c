@@ -21,9 +21,9 @@ int main () {
     
     // printf("*p = %d\n", *paddr); // Reading the value of the address pointerd by a null pointer creshes the program 
     // To avoid this error, we could check first if the pointer is not null before accessing the variable value it points to
-    if (paddr) {
-        printf("*p = %d\n", *paddr); // Reading the value of the address pointerd by a null pointer creshes the program 
-    }
+//     if (paddr) {
+//         printf("*p = %d\n", *paddr); // Reading the value of the address pointerd by a null pointer creshes the program 
+//     }
 
     // Observe the addresses of the elements in the two structures.
     printf("Addreses of x,y for p1 and p2: &p1.x=%p, &p1.x=%p, &p2.x=%p, &p2.y=%p\n", &p1.x, &p1.y, &p2.x, &p2.y);
