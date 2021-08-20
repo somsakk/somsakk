@@ -22,12 +22,12 @@ int fact_iter(int n)
 
 int main()
 {
-    int n = 5, f1, f2;
+    int m = 5, f1, f2;
     
-    f1 = fact_iter(n);
-    f2 = fact_recur(n);
-    printf("factorial(%d) = %d\n", n, f1);
-    printf("factorial(%d) = %d\n", n, f2);
+    f1 = fact_iter(m);
+    f2 = fact_recur(m);
+    printf("Iterative factorial(%d) = %d\n", m, f1);
+    printf("Recursive factorial(%d) = %d\n", m, f2);
 
     return 0;
 }
