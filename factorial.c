@@ -2,12 +2,14 @@
 
 int fact_recur(int n)
 {
+    int nfact;
     if (n < 2) {
-        return 1;
+        nfact = 1;        
     } 
     else {
-        return n*fact_recur(n-1); 
+        nfact = n*fact_recur(n-1);
     }
+    return nfact; 
 }
 
 int fact_iter(int n)
