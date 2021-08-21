@@ -16,11 +16,12 @@ int fact_iter(int n)
 {
     int i, a=1;
     
-    for (i=n; i>1; i--) {
+    for (i=1; i <= n; i++) {
         a = a*i;
     }
     return a;
 }
+
 
 int main()
 {
