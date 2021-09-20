@@ -1,6 +1,6 @@
 addi x5,x0,0xff
-# addi x6,x0,0x345
-li x6,0xDEADBEEF    # pseudo-instruction to load
+addi x6,x0,0x345
+# li x6,0xDEADBEEF    # pseudo-instruction to load
 
 # unpacking example
 and x7,x5,x6    # take Byte 0 (LSB) of x6
