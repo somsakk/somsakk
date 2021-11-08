@@ -3,11 +3,24 @@
   This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </tool>
     <tool name="Pin">
       <a name="appearance" val="NewPins"/>
     </tool>
     <tool name="Probe">
       <a name="appearance" val="NewPins"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Constant">
+      <a name="value" val="0x0"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
@@ -1760,7 +1773,22 @@ end TCL_Generic;&#13;
       <a name="label" val="S"/>
       <a name="width" val="2"/>
     </comp>
+    <comp lib="0" loc="(160,270)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(170,180)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+    </comp>
     <comp lib="0" loc="(180,330)" name="Splitter"/>
+    <comp lib="0" loc="(690,370)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+    </comp>
     <comp lib="0" loc="(710,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -1789,9 +1817,14 @@ end TCL_Generic;&#13;
       <a name="width" val="4"/>
     </comp>
     <comp loc="(530,200)" name="add_subtract_4_bits"/>
-    <wire from="(150,200)" to="(260,200)"/>
+    <wire from="(150,200)" to="(160,200)"/>
+    <wire from="(150,250)" to="(150,270)"/>
     <wire from="(150,250)" to="(200,250)"/>
+    <wire from="(150,270)" to="(160,270)"/>
     <wire from="(150,330)" to="(180,330)"/>
+    <wire from="(160,180)" to="(160,200)"/>
+    <wire from="(160,180)" to="(170,180)"/>
+    <wire from="(160,200)" to="(260,200)"/>
     <wire from="(200,220)" to="(200,250)"/>
     <wire from="(200,220)" to="(280,220)"/>
     <wire from="(200,310)" to="(230,310)"/>
@@ -1825,7 +1858,10 @@ end TCL_Generic;&#13;
     <wire from="(590,200)" to="(590,330)"/>
     <wire from="(590,330)" to="(630,330)"/>
     <wire from="(640,360)" to="(640,500)"/>
-    <wire from="(660,340)" to="(710,340)"/>
+    <wire from="(660,340)" to="(680,340)"/>
+    <wire from="(680,340)" to="(680,370)"/>
+    <wire from="(680,340)" to="(710,340)"/>
+    <wire from="(680,370)" to="(690,370)"/>
   </circuit>
   <circuit name="mux2">
     <a name="appearance" val="logisim_evolution"/>
