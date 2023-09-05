@@ -1,5 +1,4 @@
 // factorial.c
-// David_Harris@hmc.edu 22 October 2019
 #include <stdio.h>
 
 int fact(int n) {
@@ -12,7 +11,7 @@ int fact(int n) {
 }
 
 int main(void) {
-  int a = 4;
+  int a = 5;
   int result;
   result = fact(a);
   printf("factorial of %d is %d\n", a, result);
