@@ -1,5 +1,5 @@
 // fixed_point3.c
-// From https://embeddedartistry.com/blog/2018/07/12/simple-fixed-point-conversion-in-c/
+// Credit: https://embeddedartistry.com/blog/2018/07/12/simple-fixed-point-conversion-in-c/
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
