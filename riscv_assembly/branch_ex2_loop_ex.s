@@ -1,4 +1,5 @@
 # Example of for loop in LN6
+# File: branch_ex2_loop_ex.s
 # load some data into memory as data of array A. Address of A[0] is 0x10000000
     li x5,0x10000000    # x5 = &A[0] = A
     addi x8,x0,8        # To set A[0]=8, we need to store 8 temporarily in x8
