@@ -41,9 +41,9 @@ sb x14, 8(x2)
 Label1: nop
 beq x1,x2, Label1
 
-
 # U-Format
 li x10, 0x87654321
+li x11, 0x0000BEEF
 li x10, 0xDEADBEEF
 
 # B-Format
