@@ -1,30 +1,32 @@
-addi x2,x0,0xED
-addi x3,x0,0x89
+li x3,0x3ED
+li x2,-15
+li x1,8
 
 # R-Format
 add x4,x3,x2
-sub x4,x3,x2
-sll x4,x3,x2
+sub x5,x3,x2
+sll x4,x2,x1
+srl x5,x2,x1
+sra x6,x2,x1
 slt x4,x3,x2
-sltu x4,x3,x2
+sltu x5,x3,x2
 xor x4,x3,x2
-srl x4,x3,x2
-sra x4,x3,x2
-or x4,x3,x2
-and x4,x3,x2
+or x5,x3,x2
+and x6,x3,x2
 
 # I-Format
-addi x15,x1,-50
-addi x4,x3,-50
-addi x4,x3,8
-slli x4,x3,8
+addi x4,x1,-50
+addi x5,x3,-50
+addi x6,x3,8
+slli x4,x2,12
+srli x5,x2,12
+srai x6,x2,12
 slti x4,x3,8
-sltiu x4,x3,8
+sltiu x5,x3,8
 xori x4,x3,8
-srli x4,x3,8
-srai x4,x3,8
-ori x4,x3,8
-andi x4,x3,8
+xori x5,x3,-1
+ori x5,x3,8
+andi x6,x3,8
 
 ## loads
 lw x14, 8(x2)
