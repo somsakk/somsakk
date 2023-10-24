@@ -45,6 +45,10 @@ beq x1,x2, Label1
 li x10, 0x87654321
 li x11, 0x0000BEEF
 li x10, 0xDEADBEEF
+li x3,2047  # = 0x000007ff, the largest positive number for 12-bit signed, needs only addi
+li x3,-2048 # = 0xfffff800, the smallest negative number for 12-bit signed, needs only addi
+li x3,2048  # = 0x00000800, needs lui and addi
+li x3,-2049 # = 0xfffff7ff, needs lui and addi
 
 # B-Format
 Loop:   beq x19,x10,End
