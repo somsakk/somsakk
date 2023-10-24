@@ -51,4 +51,7 @@ Loop:   beq x19,x10,End
         add x18,x18,x10
         addi x19,x19,-1
         j Loop
+
+# branch at maximum offset
+        bne x0,x0,4095  # larger than this is not allowed. Try 4096.
 End:    nop
