@@ -1,5 +1,6 @@
 // assembly_ex3.c
 #include <stdio.h>
+#include <stdint.h>
 
 typedef int mytype;
 
