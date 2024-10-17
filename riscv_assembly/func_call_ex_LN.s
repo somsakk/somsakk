@@ -9,7 +9,6 @@ main: li s0,2  # a = 2
     sub s0,s1,s2  # do a = b - c
     j end
 sum: add a0,a0,a1  # find x + y = a0 + a1
-    jr ra
-    # ret
+    jr ra # return to the inst after "call sum". "jr ra" is the same as "ret".
 end: nop
 
