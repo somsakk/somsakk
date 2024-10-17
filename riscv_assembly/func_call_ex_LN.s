@@ -1,18 +1,15 @@
 # Example of jal and jalr, p. 71  
-    li s0,2  # a
-    li s1,5  # b
+main: li s0,2  # a = 2
+    li s1,5  # b = 5
 
-    mv a0,s0
+    mv a0,s0  # to call sum(a,b), pass a and b to a0 and a1 
     mv a1,s1
-    jal sum
-    mv s2,a0
-    sub s0,s1,s2
+    jal sum  # call sum()
+    mv s2,a0  # copy returned value to c
+    sub s0,s1,s2  # do a = b - c
     j end
-sum:   # x = a0, y = a1
-    addi a1,a1,2
-    add a0,a0,a1
+sum: add a0,a0,a1  # find x + y = a0 + a1
     jr ra
     # ret
-end:
-    nop
+end: nop
 
