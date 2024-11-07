@@ -12,10 +12,7 @@ main: li s0,3   # a
 
       add s4,s2,s3  # e = c + d
 end:  j end  # end of main
-
-mult: mul a0,a0,a1  
-      ret
-            
+          
 sumsquare: addi sp,sp,-8  # space on stack
       sw ra,4(sp)  # save ret addr
       sw a1,0(sp)  # save y
@@ -27,5 +24,6 @@ sumsquare: addi sp,sp,-8  # space on stack
       addi sp,sp,8  # restore stack 
       jr ra
 
-
+mult: mul a0,a0,a1  
+      ret
 
