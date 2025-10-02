@@ -9,7 +9,9 @@ len:    .word 0               # int len = 0
 .globl _start
 _start:
     # load address of str into t0
-    la   t0, str
+    # converted to "auipc x5 65536" because the data section is at 0x10000_000. Hence, the upper 20 bits is 0x10000 = 2 ** 16 = 65536.
+    # This is relative to the first inst addr, but by default is 0.
+    la   t0, str  
 
     # initialize len = 0
     li   t1, 0
