@@ -13,7 +13,7 @@ lbu x11,0(x10) # load byte unsigned, x11=?
 lw t1,1(x10) # Load word can start from any byte address. x6 = ?
 sb x11,3(x10) # store the LSB of x11 into address 3 + x10
 lw x9,0(x10) # x9 = 0xFF0007FF
-lh x12, 4(x10)
-lhu x13, 4(x10)
-sh x7, 6(x10)
+lh x12, 2(x10)
+lhu x13, 2(x10)
+sh x13, 1(x10)
 nop
