@@ -35,3 +35,5 @@ lb t1,5(s0)
 blt t0,t1,0xD28
 li t0,0x56789123
 li t0,0x56789DEF
+sra t2,t3,x8
+srai t2,t3,8
